@@ -19,7 +19,7 @@
   "scripts": {
     "serve": "npx nodemon index.js",
     "seed": "node db/seeds.js",
-    "start": "mpx nodemon server.js",
+    "start": "npx nodemon server.js",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }
