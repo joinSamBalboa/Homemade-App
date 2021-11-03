@@ -20,10 +20,10 @@ const ProfileEdit = () => {
   })
 
   const [errors, setErrors] = useState({
-    email: {},
-    username: {},
-    password: {},
-    passwordConfirmation: {}
+    // email: {},
+    // username: {},
+    // password: {},
+    // passwordConfirmation: {}
   })
 
   //* Functions 
@@ -59,8 +59,12 @@ const ProfileEdit = () => {
 
 
   return (
-    <>
+    <div className="container">
+      <div className='recipeNav'>
+      <div className="navButtons">
     <Link to="/profile"><button>Back</button></Link>
+    </div>
+    </div>
     <div className="signUpPage page">
 
       <div className="form-header sign-up-form-header">
@@ -87,7 +91,7 @@ const ProfileEdit = () => {
       </div>
 
     </div>
-    </>
+    </div>
   )
 }
 

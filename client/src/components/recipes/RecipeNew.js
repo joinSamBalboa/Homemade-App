@@ -23,13 +23,13 @@ const RecipeNew = () => {
   })
 
   const [errors, setErrors] = useState({
-    name: {},
-    time: {},
-    serves: {},
-    image: {},
-    cuisine: {},
-    difficulty: {},
-    ingredients: {}
+    // name: {},
+    // time: {},
+    // serves: {},
+    // image: {},
+    // cuisine: {},
+    // difficulty: {},
+    // ingredients: {}
   })
 
 

@@ -19,10 +19,10 @@ const SignUp = () => {
   })
 
   const [errors, setErrors] = useState({
-    email: { message: '' },
-    username: { message: '' },
-    password: { message: '' },
-    passwordConfirmation: { message: '' }
+    // email: {},
+    // username: {},
+    // password: { },
+    // passwordConfirmation: { }
   })
 
   //* Functions 
