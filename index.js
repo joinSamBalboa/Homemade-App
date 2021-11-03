@@ -10,7 +10,7 @@ const app = express()
 
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.dbURI)
+    await mongoose.connect(process.env.dbURI || 'mongodb://localhost/homemade-api')
     console.log('🌮 Database connected successfully')
 
     // Json -> req.body
@@ -40,7 +40,7 @@ const startServer = async () => {
       return res.status(404).json({ message: 'Path not found' })
     })
 
-    const server = app.listen(process.env.PORT, () => console.log(`🥕 Server up and running on port ${process.env.PORT}`))
+    const server = app.listen(process.env.PORT || 4000, '0.0.0.0', () => console.log(`🥕 Server up and running on port ${process.env.PORT}`))
     server.timeout = 10000
 
   } catch (error) {
