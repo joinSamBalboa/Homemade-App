@@ -2,8 +2,8 @@
   "name": "homemade",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:vezmaxwell/homemade.git",
-  "author": "Vez Maxwell <vezmaxwell@gmail.com>",
+  "repository": "git@github.com:joinSamBalboa/Homemade-App.git",
+  "author": "Jason Abimbola <jasonabimbola@msn.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.4",
@@ -13,7 +13,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.8",
     "mongoose-unique-validator": "^2.0.3",
-    "node": "^17.0.1",
     "path-posix": "^1.0.0",
     "uuid": "^8.3.2"
   },
