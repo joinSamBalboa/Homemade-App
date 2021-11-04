@@ -11,7 +11,7 @@
 <p>9 Days</p>
 
 ## Goal
-<p>To build a full-stack application, using an Express API to serve data from a Mongo database, consuming it with a separate front-end built with React. The application needed to have multiplae relationhips and CRUD functionality.</p>
+<p>To build a full-stack application, using an Express API to serve data from a Mongo database, consuming it with a separate front-end built with React. The application needed to have multiple relationships and CRUD functionality.</p>
 
 ### ❓ What is Homemade?
 <p>Homemade is a recipe website application where users can view homemade recipes submitted by homemade members. The users can decide to register an account, which allows them to add, edit, and delete their own recipes, leave reviews, and customise their profiles.
@@ -39,7 +39,7 @@
 
 <h4>Day 1</h4>
 This was our planning day. Iury came up with the idea of a recipe site quickly, so we started by looking at other recipe sites for inspiration. We had a main site we used for referencing (bonappetit.com/search). We all planned out what different pages/routes we wanted to have and a general website flow.
-Vez then made some photoshop mock ups for the site, which we all added our ideas into.
+Vez then made some photoshop mockups for the site, which we all added our ideas into.
 
 <div align="center">
 <img alt="opening screen" width="300" height="200" src="./client/src/images/homemade_homePage.png" />
@@ -50,7 +50,7 @@ Vez then made some photoshop mock ups for the site, which we all added our ideas
 
 
 <h4>Day 2/3</h4>
-We decided to work with a shared screen in order to build the back-end using Express JS and Mongo DB and to ensure exactly what we need to be inputted is there for the front-end. This included making the recipe and review schemas with a few seeded recipes so that we had some content to work with whilst building the front-end.
+We decided to work with a shared screen in order to build the back-end using Express JS and MongoDB and to ensure exactly what we need to be inputted is there for the front-end. This included making the recipe and review schemas with a few seeded recipes so that we had some content to work with whilst building the front-end.
 
 ```
 const reviewSchema = new mongoose.Schema({
@@ -64,7 +64,7 @@ const reviewSchema = new mongoose.Schema({
 
 const recipeSchema = new mongoose.Schema({
   name: { type: String, required: false, unique: true },
-  summary: { type: String, maxlengt: 500 },
+  summary: { type: String, maxlength: 500 },
   vegan: { type: Boolean, required: true },
   vegetarian: { type: Boolean, required: true },
   ingredients: [{ type: String, required: true }],
@@ -88,7 +88,7 @@ const userSchema = new mongoose.Schema({
 
 <h4>Day 4</h4>
 We began to build the front-end using React JS. We started by planning out the main components we were going to need: nav-bar, login, sign-up, footer, home, auth, image upload, profile, profile-edit, recipe-edit, recipe-new, search-recipe, single-recipe, review-edit, review-new, stars, user-profile.
-We started by focusing on nav-bar, register, login, homepage.
+We started by focusing on nav-bar, register, login, and homepage.
 
 <div align="center">
 <img alt="opening screen" src="./client/src/images/Screenshot 2021-09-30 at 19.23.25.png" />
@@ -112,7 +112,7 @@ recipeSchema.set('toJSON', { virtuals: true })
 ```
 
 <h4>Day 6</h4>
-On day 6 authentication and the secure route were worked on. Login, signup and review components were connected with this. The add reviews section was also added to the bottom of each recipe page. The nav-bar was also made to change when somebody logins so they could see logout and create recipe.
+On day 6 authentication and the secure route were worked on. Login, signup and review components were connected with this. The add reviews section was also added to the bottom of each recipe page. The nav-bar was also made to change when somebody logins so they could see logout and create recipes.
 The star rating system was added so you could see what the average star ratings for each recipe were.
 
 <div align="center">
@@ -139,7 +139,7 @@ Later in the day we screen shared to begin making the website responsive.
 <li>General css was tidied up and added in, better quality photos were added in and we finished making it responsive.</li>
 
 <h4>Day 9</h4>
-On day 9 we added some final functionality. On each recipe page the recipe displayed the owner of the recipe which lead to the owners profile. We added in a way for people to change their name and profile image. We added in some more seeds to fill out the site some more.
+On day 9 we added some final functionality. On each recipe page the recipe displayed the owner of the recipe which led to the owner's profile. We added a way for people to change their name and profile image. We added in some more seeds to fill out the site some more.
 
 <div align="center">
 <img alt="opening screen" src="./client/src/images/Profile.gif" />
@@ -147,13 +147,13 @@ On day 9 we added some final functionality. On each recipe page the recipe displ
 
 
 ## Difficulties
-<li>Initally coming up with an idea we would all like working on, it's not easy finding a middle ground between a group of people but we managed it</li>
+<li>Initially coming up with an idea we would all like working on, it's not easy finding a middle ground between a group of people but we managed it</li>
 <li>We ran into some issues with error handling for both login and registration but this we managed to sort this out</li>
 <li>Making all the additional features user friendly and not just cumbersome</li>
-<li>Using git initally as we worked on the front end separately and had to add our changes to for others to see; This didn't always go smoothly</li>
+<li>Using git initially as we worked on the front end separately and had to add our changes to for others to see; This didn't always go smoothly</li>
 
 ## Wins
-<li>Overall the general aesthetic loooking exactly like what we wanted and planned from day one bar some colours</li>
+<li>Overall the general aesthetic looking exactly like what we wanted and planned from day one bar some colours</li>
 <li>Adding all the features in time and feeling like we did our best for the project</li>
 <li>Working well as a team and constructively giving feedback on individual work done</li>
 
@@ -164,4 +164,5 @@ On day 9 we added some final functionality. On each recipe page the recipe displ
 * Github: [@JoinSamBalboa](https://github.com/JoinSamBalboa)
 * LinkedIn: [@JoinSamBalboa](https://linkedin.com/in/joinsambalboa)
 * Portfolio: [@JoinSamBalboa](https://www.joinsambalboa.com)
+
 
