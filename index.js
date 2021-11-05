@@ -1,7 +1,8 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import router from './config/router.js'
-import 'dotenv/config'
+import dotenv from 'dotenv'
+dotenv.config()
 import path from 'path-posix'
 
 
@@ -10,7 +11,7 @@ const app = express()
 
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.dbURI || 'mongodb://localhost/homemade-api')
+    await mongoose.connect(process.env.dbURI)
     console.log('🌮 Database connected successfully')
 
     // Json -> req.body
@@ -40,7 +41,7 @@ const startServer = async () => {
       return res.status(404).json({ message: 'Path not found' })
     })
 
-    const server = app.listen(process.env.PORT || 4000, () => console.log(`🥕 Server up and running on port ${process.env.PORT}`))
+    const server = app.listen(process.env.PORT, () => console.log(`🥕 Server up and running on port ${process.env.PORT}`))
     server.timeout = 10000
 
   } catch (error) {
