@@ -16,7 +16,7 @@
 ### ❓ What is Homemade?
 <p>Homemade is a recipe website application where users can view homemade recipes submitted by homemade members. The users can decide to register an account, which allows them to add, edit, and delete their own recipes, leave reviews, and customise their profiles.
 
-## ✨ [Demo]()
+## ✨ [Demo Homemade](https://recipes-homemade.herokuapp.com/)
 
 <div align="center">
 <img alt="opening screen" src="./client/src/images/Home.gif" />
