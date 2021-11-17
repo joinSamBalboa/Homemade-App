@@ -12,7 +12,7 @@
     "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.2",
     "react-responsive-carousel": "^3.2.21",
-    "react-router-dom": "^5.3.0",
+    "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-simple-star-rating": "^3.0.0",
     "sass": "^1.42.1",
@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild":"yarn install && yarn build && yarn start"
+    "heroku-postbuild": "yarn install && yarn build && yarn start"
   },
   "eslintConfig": {
     "extends": [
