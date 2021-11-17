@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 import ImageUpload from '../helpers/ImageUpload'
 import { getTokenFromLocalStorage } from '../helpers/auth'
@@ -8,7 +8,7 @@ import { getTokenFromLocalStorage } from '../helpers/auth'
 const ProfileEdit = () => {
 
   //* History
-  const history = useHistory()
+  const history = useNavigate()
 
   //* State
   const [formData, setFormData] = useState({

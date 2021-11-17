@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../helpers/auth'
 import ImageUpload from '../helpers/ImageUpload'
@@ -7,7 +7,7 @@ import ImageUpload from '../helpers/ImageUpload'
 const ReviewEdit = () => {
 
   const { id } = useParams()
-  const history = useHistory()
+  const history = useNavigate()
 
   const [ formData, setFormData ] = useState({
     // text: '',

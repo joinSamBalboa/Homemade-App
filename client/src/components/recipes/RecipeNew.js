@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../helpers/auth'
 import ImageUpload from '../helpers/ImageUpload'
 
 const RecipeNew = () => {
 
-  const history = useHistory()
+  const history = useNavigate()
 
   const [formData, setFormData] = useState({
     name: '',

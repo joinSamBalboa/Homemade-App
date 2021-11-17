@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import ImageUpload from '../helpers/ImageUpload'
 
@@ -7,7 +7,7 @@ import ImageUpload from '../helpers/ImageUpload'
 const SignUp = () => {
 
   //* History
-  const history = useHistory()
+  const history = useNavigate()
 
   //* State
   const [formData, setFormData] = useState({

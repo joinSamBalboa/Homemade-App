@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import { userIsAuthenticated } from '../helpers/auth'
 
 
@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom'
 const Login = () => {
 
   //* History
-  const history = useHistory()
+  const history = useNavigate()
 
   //* State
   const [formData, setFormData] = useState({

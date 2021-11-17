@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //* Componenets
 import Navbar from './components/common/Navbar'
@@ -24,41 +24,19 @@ function App() {
     <div className='site-wrapper'>
       <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/login'>
-            <Login />
-          </Route>
-          <Route exact path='/signUp'>
-            <SignUp />
-          </Route>
-          <Route exact path='/addRecipe'>
-            <RecipeNew />
-          </Route>
-          <Route exact path='/searchRecipe'>
-            <SearchRecipe />
-          </Route>
-          <Route exact path='/searchRecipe/:id'>
-            <SingleRecipe />
-          </Route>
-          <Route exact path='/searchRecipe/:id/edit'>
-            <RecipeEdit />
-          </Route>
-          <Route exact path='/searchRecipe/:id/review'>
-            <ReviewNew />
-          </Route>
-          <Route exact path='/profile'>
-            <Profile />
-          </Route>
-          <Route exact path='/profile/edit'>
-            <ProfileEdit />
-          </Route>
-          <Route exact path='/user/:id'>
-            <UserProfile />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signUp' element={<SignUp />} />
+          <Route path='/addRecipe' element={<RecipeNew />} />
+          <Route path='/searchRecipe' element={<SearchRecipe />} />
+          <Route exact path='/searchRecipe/:id' element={<SingleRecipe />} />
+          <Route exact path='/searchRecipe/:id/edit'element={<RecipeEdit />} />
+          <Route exact path='/searchRecipe/:id/review'element={<ReviewNew />} />
+          <Route exact path='/profile'element={<Profile />} />
+          <Route exact path='/profile/edit'element={<ProfileEdit />} />
+          <Route exact path='/user/:id'element={<UserProfile />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </div>

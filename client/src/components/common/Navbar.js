@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link, useHistory, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import logo from '../../images/fork.png'
 import homemade from '../../images/homemade.png'
 import { userIsAuthenticated } from '../helpers/auth'
@@ -7,7 +7,7 @@ import { userIsAuthenticated } from '../helpers/auth'
 const Navbar = () => {
 
   //* History
-  const history = useHistory()
+  const history = useNavigate()
 
   //* Location
   const location = useLocation()

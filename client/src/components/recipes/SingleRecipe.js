@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { useParams, Link, useHistory } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { getTokenFromLocalStorage, getPayload, userIsAuthenticated } from '../helpers/auth'
 import Stars from '../Stars'
 
@@ -13,7 +13,7 @@ const SingleRecipe = () => {
 
   const { id } = useParams()
 
-  const history = useHistory()
+  const history = useNavigate()
 
   
   useEffect(() => {
