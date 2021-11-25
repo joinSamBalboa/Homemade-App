@@ -3,9 +3,8 @@
 <img alt="opening screen" src="./client/src/images/homemade.png" />
 </div>
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+## Overview
+This was my third project on the Software Engineering Immersive course at General Assembly. It was a group project with Iury Liberato and Vez Maxwell.
 
 ## Timeframe
 <p>9 Days</p>
@@ -26,11 +25,11 @@
 <li>HTML5</li>
 <li>CSS3</li>
 <li>SASS</li>
-<li>Javascript ES6</li>
+<li>JavaScript ES6</li>
 <li>React</li>
 <li>Insomnia</li>
 <li>Git</li>
-<li>Github</li>
+<li>GitHub</li>
 <li>Chrome dev tools</li>
 <li>MongoDB</li>
 <li>Mongoose</li>
@@ -40,6 +39,8 @@
 <h4>Day 1</h4>
 This was our planning day. Iury came up with the idea of a recipe site quickly, so we started by looking at other recipe sites for inspiration. We had a main site we used for referencing (bonappetit.com/search). We all planned out what different pages/routes we wanted to have and a general website flow.
 Vez then made some photoshop mockups for the site, which we all added our ideas into.
+
+We decided to split up the work between the three of us so we could work independently and complete the app in time. I was tasked with completing the Individual recipe page, create and edit recipe pages, and profile, create and edit profile pages.
 
 <div align="center">
 <img alt="opening screen" width="300" height="200" src="./client/src/images/homemade_homePage.png" />
@@ -146,16 +147,24 @@ On day 9 we added some final functionality. On each recipe page the recipe displ
 </div>
 
 
-## Difficulties
+## Challenges
 <li>Initially coming up with an idea we would all like working on, it's not easy finding a middle ground between a group of people but we managed it</li>
-<li>We ran into some issues with error handling for both login and registration but this we managed to sort this out</li>
+<li>We ran into some issues with error handling for both login and registration but we managed to sort this out</li>
 <li>Making all the additional features user friendly and not just cumbersome</li>
-<li>Using git initially as we worked on the front end separately and had to add our changes to for others to see; This didn't always go smoothly</li>
+<li>Using Git initially as we worked on the front end separately and had to add our changes to for others to see; This didn't always go smoothly</li>
 
 ## Wins
 <li>Overall the general aesthetic looking exactly like what we wanted and planned from day one bar some colours</li>
 <li>Adding all the features in time and feeling like we did our best for the project</li>
 <li>Working well as a team and constructively giving feedback on individual work done</li>
+
+## Key Learnings
+<li>Working with Git; Each of us working on individual features then pushing to development to test and then to the master branch.</li>
+<li>Dividing work between a team and working efficiently to ensure we completed the app on time</li>
+
+## Bugs
+<li>No known bugs</li>
+
 
 ## Author
 

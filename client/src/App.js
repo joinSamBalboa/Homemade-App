@@ -17,14 +17,8 @@ import UserProfile from './components/userProfile'
 import Footer from './components/common/Footer'
 import ProfileEdit from './components/profile/ProfileEdit'
 
-import ReactGA from 'react-ga'
-ReactGA.initialize('UA-212975831-1')
 
 function App() {
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-}, []);
 
   return (
 
